@@ -1,0 +1,124 @@
+:root{
+--Darkcyan:hsl(158, 36%, 37%);
+--Cream:hsl(30, 38%, 92%);
+
+
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White:hsl(0, 0%, 100%);
+
+}
+
+
+body{
+ margin: 0;
+ padding: 0;
+
+}
+
+.card{
+    display: flex;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+    height: 100vh;
+}
+.cardContainer{
+    display: flex;
+}
+img{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 350px;
+    
+}
+.containerText{
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--White);
+padding:0 20px;
+}
+.containersmallHeader{
+    color: var(--Darkgrayishblue);
+font-family: "Montserrat";
+font-weight: 700;
+}
+.containerMainHeader{
+    color: var(--Verydarkblue);
+font-family: "Fraunces",sans-serif;
+font-weight: 700;
+}
+.containerParagraph{
+    color: var(--Darkgrayishblue);
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price>h3{
+    color: var(--Darkcyan);
+font-weight: 700;
+}
+span{
+    text-decoration: line-through;
+}
+button > img{
+    width: 15px;
+    padding-right: 5px;
+}
+button{
+background-color: var(--Darkcyan);
+color: var(--White);
+border-style: none;
+border-radius: 5px;
+padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+background-color: var(--Verydarkblue);
+}
+@media only screen and (max-width: 600px) {
+ .card {
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 100vh;
+}
+
+.cardContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 596px;
+    width: 350px;
+    border-radius: 8px;
+}
+img{
+height: 200px;
+}
+
+button > img{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+button{
+    margin-bottom:10px ;
+}
+
+}
